@@ -1,0 +1,204 @@
+/* Basic reset */
+* {
+    margin: 10;
+    padding: 10;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Papyrus, sans-serif;
+    line-height: 2.6;
+    color: #333;
+    background-color: #171616;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+body::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    background-color: #272727;
+    transition: 0.3s;
+    transition-timing-function: easy-in-out;
+    transform: scaleX(0)
+}
+body:hover::after
+{
+    transform: scaleX(1)}
+
+
+
+/* Header styling */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero section styling */
+.hero {
+    background: #007acc;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: auto;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background: #4ea3df;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.cta-button:hover {
+    background: #003f73;
+}
+
+/* Features section styling */
+.features {
+    padding: 5px 1dvh;
+    text-align: center;
+    background: #fff;
+    font-weight: bolder;
+}
+
+.features h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.feature-item {
+    margin-bottom: 20px;
+}
+
+.feature-item h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* Download section styling */
+.download {
+    padding: 10px 20px;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+.download h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.download p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.download-button {
+    background: #007acc;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.download-button:hover {
+    background: #005999;
+}
+
+/* Community section styling */
+.community {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.community h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.community-button {
+    background: #007acc;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.community-button:hover {
+    background: #005999;
+}
+
+/* Footer styling */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+img {
+    width:100px;
+    border-radius:50px;
+    float: right;
+    margin-right:10px;
+    object-fit: cover;
+}
